@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Dancing Script';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/dancingscript/v16/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp6hNX6plRPjLo.woff) format('woff');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+/* Estilo del título y barra de navegación */
+#tittle{
+    size: 50px;
+	color:#E3CA00;
+	text-shadow: 2px 2px#4B3617;
+}
+#tittle:hover{ /* Indica el estilo cuando el cursor está sobre el título */ 
+    color: #4B3617;
+    text-shadow: 2px 2px#E3CA00;
+    transition: all 0.3s ease 0.1s;
+}
+
+html{ 
+	background-color:#FED978; /* Aplica el color a la parte de atrás de la página */
+   }
+body{  
+    width: 70%; /* Establece un ancho de la página de acuerdo con el elemento contenedor, en este caso html, la pantalla*/
+    background-color: #F2F3F5; /* Color del contenedor body */
+    background-clip: content-box; /*Commando para recortar el fondo al contenido*/
+    padding-left: 14%; /*Establece un padding izquierdo en el body de acuerdo al tamaño de la pantalla*/
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.fondo {    /* este elemento agrupa todo el conjunto y lo centra en la ventana*/
+    /* background-color: #EEDDBB; */
+    max-width: 840px;
+    margin: auto;
+    text-align: center;
+	align-content: center;
+}
+.fondo2 {/* este elemento agrupa todo el conjunto y lo centra en la ventana*/
+    max-width: 900px;
+    margin: auto;
+	text-align: justify;
+	align-content: center;
+	margin:25px;
+}
+
+.fondo4 {   /* este elemento agrupa todo el conjunto hacia la izquierda y limita el ancho */
+    max-width: 360px;
+    margin: auto;
+	text-align: left;
+	align-content: center;
+	margin:25px;
+}
+.fondo5 {/* este elemento agrupa todo el conjunto y limita el ancho de los parrafos*/
+    margin: auto;
+	align-content: center;
+	font-size: 16px;
+    line-height: 1.3;
+	min-width:200px; /* ancho de columna variable pero dentro de un rango*/
+    max-width:450px;
+    margin-top:20px;
+	margin:25px;
+	text-align: justify;
+}
+.fondo6 {
+    margin: auto;
+	font-size: 16px;
+    line-height: 1.3; /* ancho de columna variable pero dentro de un rango*/
+    max-width:900px;
+	margin:25px;
+	text-align: justify;
+}
+
+
+h1{ /*Titulo*/
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:#BF7E04;
+    font-size: 3em;
+    margin: 10px;
+    text-align: center; /* Centra todas los títulos con el titular más grande */
+}
+
+h2 {/*Subtitulo*/
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 24px;
+	font-style: normal;
+    font-weight: normal;
+	color: #000000;
+	text-align: left;
+    max-width: 300px;
+    margin-left: 20PX;
+}
+
+
+
+a:link {
+	text-decoration: none; /* evita que se subrayen los vínculos*/
+	color:#FFFFFF;           /* vínculos grises y no azules por defecto*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	
+}
+a:visited {
+	color:#FFFFFF; /* Color de la letra en los botones*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+.botonMenu2{ /* Establece el estilo para cada botón del menu de navegación */
+     /* Establece el estilo del contorno del elemento */
+	background-image: url(../imagenes/Picture\ 1_opt.png); /* la imagen mide 160px*/
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px; /* Define el radio de redondeo de las esquinas */
+}
+
+.botonMenu2:hover {	
+	background-image: url(../imagenes/Picture\ 2_opt.png); /* cambia la imagen al pasar el cursor*/
+	cursor:pointer;
+}
+.imgCentrada{ /* Estilo de las imágenes con esta etiqueta */
+    display: block; /* El elemento se comporta como un bloque por lo que genera líneas de quiebre antes y después del elemento */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* De acuerdo al contenedor (body) establece un ancho del 50% y con márgenes automáticas y el display lo centra*/
+}
+
+.imgCentrada1{ /* Estilo de las imágenes con esta etiqueta */
+    display: block; /* El elemento se comporta como un bloque por lo que genera líneas de quiebre antes y después del elemento */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; /* De acuerdo al contenedor (body) establece un ancho del 50% y con márgenes automáticas y el display lo centra*/
+}
+
+.imgCentrada2{ /* Estilo de las imágenes con esta etiqueta */
+    display: block; /* El elemento se comporta como un bloque por lo que genera líneas de quiebre antes y después del elemento */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%; /* De acuerdo al contenedor (body) establece un ancho del 50% y con márgenes automáticas y el display lo centra*/
+}
+.Img-uno{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 50%;
+    height: auto;
+    margin: 5px;
+}
+.Img-dos{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 300px;
+    height: auto;
+    margin: 5px;
+}
+.Img-tres{/* Estilo de las imágenes con esta etiqueta */
+    float: Left;
+    width: 30%;
+    max-height: 150px;
+    margin: 5px;
+}
+.Img-cua{/* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 20%;
+    height: auto;
+    margin: 5px;
+}
+.Img-cin{ /* Estilo de las imágenes con esta etiqueta */
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: 5px;
+}
+.Img-seis{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+.Img7{ /* Estilo de las imágenes con esta etiqueta */
+    float: left;
+    width: 110px;
+    height: auto;
+    margin: 5px;
+}
+.Img8{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 40%;
+    height: auto;
+    margin: 5px;
+}
+.Img9{/* Estilo de las imágenes con esta etiqueta */
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 5px;
+}
+.Img10{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 120px;
+    height: auto;
+    margin: 5px;
+}
+.Img11{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 180px;
+    height: auto;
+    margin: 5px;
+}
+.Img12{ /* Estilo de las imágenes con esta etiqueta */
+    float: left;
+    width: 250px;
+    height: auto;
+    margin: 5px;
+}
+.Img13{ /* Estilo de las imágenes con esta etiqueta */
+    float: right;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+/* Estilo en index */
+.LTransp{ /* Estilo de ítems de lista con la etiqueta de clase */
+    list-style-type: square;
+    padding: 1%; /* Da un padding en porcentaje de acuerdo al contenedor, en este caso, el body */
+	text-align: justify;
+
+}
+.LTransp li { /* Estilo de los ítems de lista dentro de la clase */
+	text-align: justify;
+    margin: 20px;
+}
+
+.ListaRef{
+    word-wrap: break-word; /* Evita el desbordamiento de los link fuera del body */
+	color: #000000;
+}
+
+/* elementos del menu desplegable*/
+#btn-menu {
+    display: none;   /* oculta el checkbox cuando no es necesario*/
+} 
+header {
+    width: 100%;
+	z-index: 10;	/* coloca el checkbox por encima del contenido*/
+} 
+header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+} 
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+.menu ul{
+    margin-left: 20px; 
+    margin-right: 20px;
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+}
+.menu li{
+    background-image: url(../imagenes/Picture\ 1_opt.png);
+    background-repeat: no-repeat; /* evita que se repita la imagen aunque cambie el tamaño*/
+    width: 160px;
+    height: 33px;
+    font-size: 14px;
+	text-align: center;
+    color: #E0E6EF;
+    text-decoration: none; 
+    margin-bottom: 10px;
+} 
+.menu li a {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:#FFFFFF;
+	
+    text-decoration: none;    
+    padding-top:6px;    
+}
+.menu li a:hover {
+    color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	background-image: url(../imagenes/Picture\ 2_opt.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    padding-top:6px;
+}  
+
+
+.fx_footer p{ /* Estilo de los elementos p del pie de página */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:#000;
+    font-size: 15px;  
+	text-align: center;  
+}
+.ft_content nav{ /* Estilo de la barra de navegación del pie de pagina */
+    position: relative;
+	color:#000;
+    bottom: 10px; /* Desplazamiento desde su posición original de la parte baja del elementos */
+    text-align: center;
+}
+
+
+
+/* cuando la ventana mida menos de 1200px */
+@media only screen and (max-width: 1200px) {
+html{ 
+	background-color:#BCBF50; /* Aplica el color a la parte de atrás de la página */
+   }
+    body {
+    background-color: #F2EDD0;
+}
+#tittle{
+    size: 50px;
+	color:#D9B64E;
+	text-shadow: 2px 2px#D9C589;
+}
+#tittle:hover{ /* Indica el estilo cuando el cursor está sobre el título */ 
+    color: #D9C589;
+    text-shadow: 2px 2px#D9B64E;
+    transition: all 0.3s ease 0.1s;
+}
+
+
+
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 3em;
+        text-align: center; /* Centra todas los títulos con el titular más grande */
+}
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+        text-align: left;
+        max-width: 300px;
+        margin-left: 20PX; 
+    }
+  
+}
+
+/* cuando la ventana mida menos de 800x */
+@media only screen and (max-width: 800px) {
+html{ 
+	background-color:#F2E18D; /* Aplica el color a la parte de atrás de la página */
+   }
+    body {
+    background-color: #F2F2F2;
+}
+#tittle{
+    size: 50px;
+	color:#F29544;
+	text-shadow: 2px 2px#BFB99B;
+}
+#tittle:hover{ /* Indica el estilo cuando el cursor está sobre el título */ 
+    color: #BFB99B;
+    text-shadow: 2px 2px#F29544;
+    transition: all 0.3s ease 0.1s;
+}
+h1 {
+	font-size: 40px;
+}
+
+     header label{
+        display: block; /* se muestra el checkbox cuando se reduce la ventana*/
+    } 
+    .menu {
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+        background: #f2954463; /* rojo, verde, azul, alpha (transparencia) */
+		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 200px; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: -30px;
+        transition: all 1s;   /* la animación de desplegar el menu dura 1 segundo*/
+    } 
+    .menu ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+    .menu li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    #btn-menu:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+        margin-top: -130px;
+    } 
+    h1 {
+	font-size: 60px;
+}
+
+}
